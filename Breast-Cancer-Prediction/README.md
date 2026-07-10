@@ -30,7 +30,7 @@ This project predicts whether a breast tumor is **Benign** or **Malignant** usin
 ```
 Breast-Cancer-Prediction/
 │
-├── SVM_Model.ipynb
+├── Breast_Cancer_prediction_SVM.ipynb
 ├── README.md
 ├── requirements.txt
 └── .gitignore
@@ -39,7 +39,6 @@ Breast-Cancer-Prediction/
 ## Future Improvements
 
 - Hyperparameter tuning with GridSearchCV
-- Save trained model using Pickle
 - Build a web application using Flask or Django
 - Deploy the model online
 
