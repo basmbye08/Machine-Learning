@@ -1,0 +1,20 @@
+# Python 
+__pycache__/ 
+*.pyc 
+*.pyo 
+*.pyd 
+ 
+# Jupyter 
+.ipynb_checkpoints 
+ 
+# Environment 
+.env 
+venv/ 
+*.egg-info/ 
+ 
+# Model files (optional) 
+*.pkl 
+ 
+# OS 
+.DS_Store 
+Thumbs.db 
