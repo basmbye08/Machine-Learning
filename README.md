@@ -11,7 +11,7 @@ As I continue learning and building, I'll keep adding new projects covering regr
 | Project | Description | Status |
 |---------|-------------|--------|
 | 🏠 House Price Prediction | Predicts house prices using regression models with data preprocessing, feature engineering, and model evaluation. | ✅ Completed |
-| 🎗️ Breast Cancer Prediction | Classifies tumors as benign or malignant using machine learning classification algorithms. | 🚧 Coming Soon |
+| 🎗️ Breast Cancer Prediction | Classifies tumors as benign or malignant using machine learning classification algorithms. | ✅ Completed |
 | 📊 Customer Churn Prediction | Predicts whether customers are likely to leave a business using classification models. | 🚧 Planned |
 | 💬 Sentiment Analysis | Classifies text sentiment using Natural Language Processing techniques. | 🚧 Planned |
 | 📈 Student Performance Prediction | Predicts student academic performance using supervised learning. | 🚧 Planned |
