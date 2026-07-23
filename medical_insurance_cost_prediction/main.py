@@ -107,12 +107,14 @@ elif page == "Exploratory Data Analysis":
     st.dataframe(df_display, use_container_width=True)
     
     csv = df_display.to_csv(index=False).encode("utf-8")
-    st.download_button(
-        "Download Dataset",
-        csv,
-        BASE_DIR / "insurance_clean.csv",
-        "text/csv"
+   st.download_button(
+    label="Download Dataset",
+    data=csv,
+    file_name="insurance_clean.csv",
+    mime="text/csv"
     )
+
+    
     
     st.markdown("---")
     st.subheader("Categorical Split vs. Smoking Status")
