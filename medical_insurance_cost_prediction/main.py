@@ -107,7 +107,7 @@ elif page == "Exploratory Data Analysis":
     st.dataframe(df_display, use_container_width=True)
     
     csv = df_display.to_csv(index=False).encode("utf-8")
-   st.download_button(
+    st.download_button(
     label="Download Dataset",
     data=csv,
     file_name="insurance_clean.csv",
