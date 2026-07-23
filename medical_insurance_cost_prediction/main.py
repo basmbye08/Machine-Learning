@@ -1,9 +1,11 @@
+from pathlib import Path
 import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
 import plotly.express as px
 import plotly.figure_factory as ff
+BASE_DIR = Path(__file__).parent
 
 # -----------------------------
 # Page Configuration
@@ -25,12 +27,12 @@ if "history" not in st.session_state:
 # -----------------------------
 @st.cache_resource
 def load_model():
-    with open("model.pkl", "rb") as f:
+    with open(BASE_DIR / "model.pkl", "rb") as f:
         return pickle.load(f)
 
 @st.cache_data
 def load_and_process_data():
-    raw_df = pd.read_csv("insurance.csv")
+    raw_df = pd.read_csv(BASE_DIR / "insurance.csv")
     
     # Keep a copy with clean labels for plotting
     display_df = raw_df.copy()
@@ -108,7 +110,7 @@ elif page == "Exploratory Data Analysis":
     st.download_button(
         "Download Dataset",
         csv,
-        "insurance_clean.csv",
+        BASE_DIR / "insurance_clean.csv",
         "text/csv"
     )
     
